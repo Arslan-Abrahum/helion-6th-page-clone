@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main1 {
+    height: max-content;
+    width: 100%;
+    background-image: url(./decoration.png);
+    background-size: 25% 45%;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+}
+
+.navbar {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar>img {
+    height: 25px;
+}
+
+.navbar>ul {
+    width: 50%;
+    height: max-content;
+}
+
+.navbar>ul>li {
+    display: inline-block;
+    position: relative;
+    list-style: none;
+    font-family: HKGrotesk, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: rgb(0, 0, 0);
+    margin-left: 7%;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .5s all linear;
+    height: 70px;
+}
+
+.navbar>ul>li>a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .uls {
+    position: absolute;
+    width: 400px;
+    height: auto;
+    background-color: black;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    display: none;
+    opacity: 0;
+    transition: .5s;
+    padding: 20px 0;
+
+}
+
+.navbar>ul>li:hover .uls {
+    display: flex;
+    opacity: 1;
+}
+
+.uls ul li {
+    list-style: none;
+    margin-top: 10px;
+    transition: .3s;
+    color: white;
+    width: max-content;
+}
+
+.uls ul li:hover {
+    transform: translateX(1%);
+    color: orangered;
+}
+
+.ulss {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    background-color: black;
+    margin-top: 40px;
+    display: none;
+    opacity: 0;
+    transition: .5s;
+    padding: 20px 0;
+}
+
+.ulss>ul>li {
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 5%;
+    transition: .5s;
+}
+
+.ulss>ul>li:hover a {
+    color: orangered;
+    transform: translateX(2%);
+}
+
+.ulss>ul>li>a {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+.ulss>ul>li>i {
+    color: white;
+    margin-left: 40%;
+    transition: .5s;
+}
+
+.ulss>ul>li:hover i {
+    color: orangered;
+    transform: translateX(2%);
+}
+
+.navbar>ul>li:hover .ulss {
+    display: block;
+    opacity: 1;
+}
+
+.icons {
+    height: 70px;
+    width: 10%;
+}
+
+#icon1 {
+    font-size: 35px;
+    margin-left: 18%;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.h1 {
+    font-family: LouisGeorgeCafe, sans-serif;
+    font-size: 49.266px;
+    font-weight: 500;
+    line-height: 49.266px;
+    color: rgb(13, 13, 18);
+    text-align: center;
+    margin-top: 80px;
+}
+
+.p1 {
+    font-family: HKGrotesk, sans-serif;
+    font-size: 16.266px;
+    font-weight: 700;
+    line-height: 21.266px;
+    color: rgb(13, 13, 18);
+    text-align: center;
+    margin-top: 40px;
+}
+
+.main2 {
+    height: max-content;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+
+}
+
+.box {
+    overflow: hidden;
+
+}
+
+.box:hover #image1 {
+    transform: scale(1.2);
+}
+
+.box1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    overflow: hidden;
+}
+
+#image1 {
+    height: 100%;
+    width: 100%;
+    transition: .5s;
+}
+
+.box1:hover #image1 {
+    transform: scale(1.2);
+}
+
+.box2 {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    overflow: hidden;
+}
+
+#image2 {
+    height: 100%;
+    width: 100%;
+    transform: scale(1.5);
+    transition: .5s;
+}
+
+.box2:hover #image2 {
+    transform: scale(1.7);
+}
+
+.box3 {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    overflow: hidden;
+}
+
+.box3:hover #image1 {
+    transform: scale(1.2);
+}
+
+#icon2 {
+    display: none;
+}
+
+
+.main10 {
+    height: max-content;
+    width: 100%;
+    background-color: rgb(26, 26, 31);
+    padding: 50px;
+}
+
+.child19 {
+    height: max-content;
+    width: 90%;
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.child20 {
+    height: max-content;
+    width: 300px;
+    padding: 50px 0;
+}
+
+#image10 {
+    height: 25px;
+
+}
+
+.p26 {
+    font-family: LouisGeorgeCafe, sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 24px;
+    color: white;
+}
+
+.p27 {
+    font-family: HKGrotesk, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 31px;
+    color: rgb(174, 174, 174);
+    margin-top: 30px;
+}
+
+.p28 {
+    font-family: HKGrotesk, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 39px;
+    color: rgb(174, 174, 174);
+    width: max-content;
+    transition: .5s;
+    cursor: pointer;
+    position: relative;
+    margin-top: 20px;
+}
+
+.p28:hover {
+    color: white;
+}
+
+.p28_pd1 {
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 154px;
+    background-color: rgb(109, 114, 119);
+    cursor: pointer;
+    transition: .5s;
+
+}
+
+.p28:hover .p28_pd1 {
+    width: 0px;
+    background-color: white;
+}
+
+.p29 {
+    font-family: HKGrotesk, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 39px;
+    color: white;
+    margin-top: 30px;
+}
+
+.p30 {
+    font-family: HKGrotesk, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgb(174, 174, 174);
+    margin-top: 25px;
+    transition: .5s;
+    cursor: pointer;
+    width: max-content;
+}
+
+.p30:hover {
+    color: orangered;
+    margin-left: 10px;
+
+}
+
+#icon11 {
+    font-size: 20px;
+    color: rgb(109, 114, 119);
+    margin-top: 20px;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: .5s;
+}
+
+#icon11:hover {
+    color: orangered;
+}
+
+.color4 {
+    color: gray;
+}
+
+.p31 {
+    margin-left: 5%;
+    color: white;
+}
+
+
+
+/* ///////////////////// Media Queries //////////////////////////// */
+
+@media screen and (max-width: 1024px) {
+    .navbar>ul>li>.anker2 {
+        display: none;
+    }
+    #icon2 {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar>ul {
+        display: none;
+    }
+
+    .child20 {
+        border-bottom: 1px solid gray;
+    }
+}

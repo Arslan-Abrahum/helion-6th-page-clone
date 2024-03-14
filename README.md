@@ -1,1 +1,1 @@
-# helion-6th-page-clone
+# Helion 6th Page Clone built by using  HTML and CSS.
